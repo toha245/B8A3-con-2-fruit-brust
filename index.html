@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conceptual-2 With Daisy UI</title>
-</head>
-<body>
-    
-</body>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/c6b3ba4e95.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bike-primary": "#E76F51",
+              "bike-primary-bg": "rgba(231, 111, 81, 0.10)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lato w-[98%] mx-auto">
+    <header>
+      <!-- navbar start -->
+      <div
+        class="container flex justify-center items-center mx-auto my-5 navbar lg:bg-[#F85559] py-[15px] rounded-full "
+      >
+        <div class="hidden lg:block navbar-start pl-[40px]">
+          <ul class="flex gap-10 text-[18px] text-[#FFFFFF] font-medium">
+            <li class="hover:bg-red-400 p-1"><a href="">Home</a></li>
+            <li class="hover:bg-red-400 p-1"><a href="">About Us</a></li>
+            <li class="hover:bg-red-400 p-1"><a href="">Shop</a></li>
+            <li class="hover:bg-red-400 p-1"><a href="">All Fruits</a></li>
+          </ul>
+        </div>
+        <!-- navbar center -->
+        <div class="navbar-center">
+          <div class="flex justify-center items-center gap-3 mx-auto">
+            <img class="w-7 lg:w-9" src="./images/logo.png" alt="" />
+            <h1 class="text-[#121212] lg:text-[#FFFFFF] text-[20px] lg:text-[28px] font-bold">Fruit Burst</h1>
+          </div>
+        </div>
+        <!-- navbar end -->
+        <div class="navbar-end pr-[30px]">
+          <div
+            class="hidden lg:flex w-4/6 bg-white rounded-full flex items-center justify-between pl-4 h-[43px]"
+          >
+            <input
+              class=""
+              type="text"
+              name=""
+              id=""
+              placeholder="Search here"
+            />
+            <button class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+          </div>
+          </div>
+          <!-- small device menubar -->
+          <div class="lg:hidden navbar-end lg:pr-[30px]">
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class=""><i class="fa-solid fa-bars text-[21px]"></i></div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-32 p-2 shadow"
+              >
+                <li class="hover:bg-red-400 p-1"><a href="">Home</a></li>
+                <li class="hover:bg-red-400 p-1"><a href="">About Us</a></li>
+                <li class="hover:bg-red-400 p-1"><a href="">Shop</a></li>
+                <li class="hover:bg-red-400 p-1"><a href="">All Fruits</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
