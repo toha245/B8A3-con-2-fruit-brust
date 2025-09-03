@@ -44,17 +44,19 @@
     </script>
   </head>
   <body class="font-lato">
-    <header class="w-[97%] mx-auto">
+    <header id="home" class="w-[97%] mx-auto">
       <!-- navbar start -->
       <div
         class="container flex justify-center items-center ml-auto mr-auto navbar lg:bg-[#F85559] mt-0 lg:mt-4 py-[15px] lg:rounded-full px-0 lg:mb-5"
       >
         <div class="hidden lg:block navbar-start pl-[40px]">
           <ul class="flex gap-10 text-[18px] text-[#FFFFFF] font-medium">
-            <li class="hover:bg-red-400 p-1"><a href="">Home</a></li>
-            <li class="hover:bg-red-400 p-1"><a href="">About Us</a></li>
-            <li class="hover:bg-red-400 p-1"><a href="">Shop</a></li>
-            <li class="hover:bg-red-400 p-1"><a href="">All Fruits</a></li>
+            <li class="hover:bg-red-400 p-1"><a href="#home">Home</a></li>
+            <li class="hover:bg-red-400 p-1"><a href="#about">About Us</a></li>
+            <li class="hover:bg-red-400 p-1"><a href="#shop">Shop</a></li>
+            <li class="hover:bg-red-400 p-1">
+              <a href="#all fruits">All Fruits</a>
+            </li>
           </ul>
         </div>
         <!-- navbar center -->
@@ -120,7 +122,7 @@
 
     <main class="w-[97%] mx-auto">
       <!-- start hero section -->
-      <section class="container mx-auto">
+      <section id="all fruits" class="container mx-auto">
         <div class="carousel w-full">
           <!-- slide 1 -->
           <div
@@ -317,7 +319,7 @@
       <!-- end hero section -->
 
       <!--start deal section -->
-      <section class="container mx-auto lg:mt-0 mt-6 pt-0 mb-14">
+      <section id="shop" class="container mx-auto lg:mt-0 mt-6 pt-0 mb-14">
         <!-- timer section -->
         <div
           class="flex flex-col lg:flex-row lg:justify-between items-center mx-1"
@@ -650,6 +652,7 @@
 
       <!-- start meet section -->
       <section
+        id="support"
         class="container mr-auto ml-auto mx-[9px] lg:mt-0 mt-6 mb-14 text-[#FFFFFF] pt-7 pb-16 lg:py-[100px] bg-[linear-gradient(90deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/banner1.png)] object-cover bg-center bg-cover rounded-2xl"
       >
         <!-- container -->
@@ -720,7 +723,7 @@
       <!-- end meet section -->
 
       <!-- start choose section -->
-      <section class="container mx-auto mb-14">
+      <section id="about" class="container mx-auto mb-14">
         <!-- container -->
         <div>
           <!-- title part -->
@@ -893,50 +896,103 @@
       <!-- end choose section -->
     </main>
     <!-- start footer section -->
-    <footer class="bg-[#121212] ">
+    <footer class="bg-[#121212]">
       <div class="flex flex-col justify-center items-center text-center">
         <!-- 1rst line -->
         <div class="pt-[50px] lg:pt-[100px] mb-[40px] mx-auto">
-          <div class="flex justify-center items-center text-center gap-3 mx-auto">
+          <div
+            class="flex justify-center items-center text-center gap-3 mx-auto"
+          >
             <img class="w-7 lg:w-9" src="./images/logo.png" alt="" />
-            <h1
-              class="text-[#FFFFFF] text-[22px] lg:text-[28px] font-bold"
-            >
+            <h1 class="text-[#FFFFFF] text-[22px] lg:text-[28px] font-bold">
               Fruit Burst
             </h1>
           </div>
         </div>
         <!-- 2nd line -->
-         <!-- large device -->
+        <!-- large device -->
         <div
           class="hidden lg:flex text-[#FFFFFF] grid grid-cols-4 lg:grid-cols-6 justify-items-center mx-auto my-auto lg:mb-[25px] gap-6"
         >
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">Home</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">About Us</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">Shop</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">All Fruits</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">Support</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">My Account</a></p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#home">Home</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#about">About Us</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#shop">Shop</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#all fruits">All Fruits</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#support">Support</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="">My Account</a>
+          </p>
         </div>
         <!-- small device -->
-         <div
+        <div
           class="lg:hidden text-[#FFFFFF] flex flex-wrap justify-center mx-auto my-auto gap-8"
         >
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">Home</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">About Us</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">Shop</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">All Fruits</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">Support</a></p>
-          <p class="text-[18px] font-semibold"><a class="hover:bg-red-400 p-1" href="">My Account</a></p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#home">Home</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#about">About Us</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#shop">Shop</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#all fruits">All Fruits</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="#support">Support</a>
+          </p>
+          <p class="text-[18px] font-semibold">
+            <a class="hover:bg-red-400 p-1" href="">My Account</a>
+          </p>
         </div>
         <!-- last line -->
-        <div class="mt-[35px] mb-[50px] lg:pb-[60px] flex flex-wrap gap-8 justify-center items-center">
-          <img class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]" src="./images/Group 47.png" alt="" />
-          <img class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]" src="./images/Group 48.png" alt="" />
-          <img class="w-[33px] h-[23px] lg:w-[57px] lg:h-[40px]" src="./images/Group 49.png" alt="" />
-          <img class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]" src="./images/Group 50.png" alt=""/>
-          <img class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]" src="./images/Group 51.png" alt="" />
-          <img class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]" src="./images/Group 52.png" alt="" />
+        <div
+          class="mt-[35px] mb-[50px] lg:pb-[60px] flex flex-wrap gap-8 justify-center items-center"
+        >
+          <img
+            class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]"
+            src="./images/Group 47.png"
+            alt=""
+          />
+          <a
+            href="https://www.facebook.com/people/Center-Of-Light/61573872647601/?rdid=1lr64mqaXmDXTCIP&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1M7wt4DWdo%2F"
+            ><img
+              class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]"
+              src="./images/Group 48.png"
+              alt=""
+          /></a>
+          <a href="https://www.youtube.com/@CenterOfLightBD"
+            ><img
+              class="w-[33px] h-[23px] lg:w-[57px] lg:h-[40px]"
+              src="./images/Group 49.png"
+              alt=""
+          /></a>
+          <img
+            class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]"
+            src="./images/Group 50.png"
+            alt=""
+          />
+          <img
+            class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]"
+            src="./images/Group 51.png"
+            alt=""
+          />
+          <img
+            class="w-[23px] h-[23px] lg:w-[40px] lg:h-[40px]"
+            src="./images/Group 52.png"
+            alt=""
+          />
         </div>
       </div>
     </footer>
